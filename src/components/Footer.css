@@ -1,0 +1,138 @@
+@import '@fontsource/barlow/400.css';
+@import '@fontsource/barlow/500.css';
+@import '@fontsource/barlow/600.css';
+@import '@fontsource/barlow/700.css';
+
+.footer-container {
+  background-color: #e8505e;
+  color: white;
+  padding: 40px;
+  font-family: 'Barlow', sans-serif;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+font-family: 'Barlow', sans-serif;
+
+}
+
+.footer-section h3 {
+  font-weight: 600; 
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.footer-section .logo-icon {
+  height: 24px; 
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+  font-weight: 400; 
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+}
+
+.scroll-to-top-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-to-top-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.scroll-to-top-button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+.footer-bottom {
+  position: relative; 
+}
+
+.scroll-to-top-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+
+.footer-bottom p {
+  margin-right: 70px; 
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr; 
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .scroll-to-top-button {
+    position: static; 
+    margin-top: 10px;
+  }
+
+  .footer-bottom p {
+    margin-right: 0;
+  }
+}

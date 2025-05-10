@@ -1,0 +1,120 @@
+@import '@fontsource/barlow/400.css';
+@import '@fontsource/barlow/500.css';
+@import '@fontsource/barlow/600.css';
+@import '@fontsource/barlow/700.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background-color: #fff;
+}
+
+.app-container {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.content-wrapper {
+  display: contents;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-left {
+  flex: 1;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 450px;
+}
+
+.hero-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-right {
+  flex: 1.5;
+  padding: 1rem 0;
+}
+
+.highlight-pill {
+  display: inline-block;
+  background-color: #c8f5aa;
+  color: #2e4014;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  color: #222;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #555;
+  max-width: 600px;
+}
+
+/* Cards Container */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Card Icon Images */
+.info-card-icon-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  
+  .hero-left, .hero-right {
+    max-width: 100%;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}

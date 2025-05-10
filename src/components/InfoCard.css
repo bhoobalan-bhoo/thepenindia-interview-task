@@ -1,0 +1,70 @@
+@import '@fontsource/barlow/400.css';
+@import '@fontsource/barlow/500.css';
+@import '@fontsource/barlow/600.css';
+@import '@fontsource/barlow/700.css';
+
+.info-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 16px;
+  width: 280px;
+  height: 320px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+
+.info-card:hover {
+  background-color: #e44d5c;
+}
+
+
+.info-card:hover .info-card-button {
+  background-color: white;
+  color: #e44d5c;
+}
+
+
+.info-card-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #e44d5c;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-top-left-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
+.info-card-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.info-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: 'Barlow';
+  font-weight: 600;
+}
+
+.info-card-description {
+  font-size: 16px;
+  color: #333;
+  font-family: 'Barlow';
+  font-weight: 400;
+}
+
+
+.info-card-button:hover {
+  background-color: #d13f4e;
+}
